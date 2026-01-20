@@ -1,0 +1,52 @@
+{
+  "resources/images/auth/forgot-password1.png": {
+    "file": "icons/forgot-password1.png",
+    "src": "resources/images/auth/forgot-password1.png"
+  },
+  "resources/images/auth/login1.png": {
+    "file": "icons/login1.png",
+    "src": "resources/images/auth/login1.png"
+  },
+  "resources/images/auth/register1.png": {
+    "file": "icons/register1.png",
+    "src": "resources/images/auth/register1.png"
+  },
+  "resources/images/auth/reset-password1.png": {
+    "file": "icons/reset-password1.png",
+    "src": "resources/images/auth/reset-password1.png"
+  },
+  "resources/images/bg-themes/body-background-1.webp": {
+    "file": "icons/body-background-1.webp",
+    "src": "resources/images/bg-themes/body-background-1.webp"
+  },
+  "resources/sass/blue-theme.scss": {
+    "file": "css/blue-theme.css",
+    "src": "resources/sass/blue-theme.scss",
+    "isEntry": true
+  },
+  "resources/sass/bordered-theme.scss": {
+    "file": "css/bordered-theme.css",
+    "src": "resources/sass/bordered-theme.scss",
+    "isEntry": true
+  },
+  "resources/sass/dark-theme.scss": {
+    "file": "css/dark-theme.css",
+    "src": "resources/sass/dark-theme.scss",
+    "isEntry": true
+  },
+  "resources/sass/main.scss": {
+    "file": "css/main.css",
+    "src": "resources/sass/main.scss",
+    "isEntry": true
+  },
+  "resources/sass/responsive.scss": {
+    "file": "css/responsive.css",
+    "src": "resources/sass/responsive.scss",
+    "isEntry": true
+  },
+  "resources/sass/semi-dark.scss": {
+    "file": "css/semi-dark.css",
+    "src": "resources/sass/semi-dark.scss",
+    "isEntry": true
+  }
+}
