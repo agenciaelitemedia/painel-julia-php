@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 14% 98%;
+    --foreground: 222 15% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 15% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 15% 25%;
+    --primary: 260 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 260 60% 45%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 222 15% 25%;
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 177 100% 35%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 260 60% 50%;
+    --radius: 0.75rem;
+    --chart-1: 286 48% 30%;
+    --chart-2: 280 42% 41%;
+    --chart-3: 307 42% 41%;
+    --chart-4: 338 66% 46%;
+    --chart-5: 338 82% 50%;
+    
+    /* Custom palette colors */
+    --sidebar-background: 220 13% 92%;
+    --sidebar-foreground: 222 15% 25%;
+    --sidebar-primary: 260 60% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 88%;
+    --sidebar-accent-foreground: 222 15% 25%;
+    --sidebar-border: 220 13% 85%;
+    --sidebar-ring: 260 60% 50%;
+    
+    /* WhatsApp specific colors */
+    --whatsapp-bg: 0 0% 93%;
+    --whatsapp-sidebar: 0 0% 100%;
+    --whatsapp-chat-bg: 220 14% 96%;
+    --whatsapp-message-sent: 142 70% 94%;
+    --whatsapp-message-received: 0 0% 100%;
+    --whatsapp-hover: 280 42% 95%;
+  }
+
+  .dark {
+    --background: 222 20% 12%;
+    --foreground: 0 0% 98%;
+    --card: 222 18% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 18% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 260 60% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 260 60% 60%;
+    --secondary: 222 15% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 222 15% 20%;
+    --muted-foreground: 220 9% 64%;
+    --accent: 177 100% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 15% 22%;
+    --input: 222 15% 22%;
+    --ring: 260 60% 55%;
+    
+    --sidebar-background: 222 18% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 260 60% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 15% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 222 15% 22%;
+    --sidebar-ring: 260 60% 55%;
+    
+    /* WhatsApp Dark Mode */
+    --whatsapp-bg: 0 0% 7%;
+    --whatsapp-sidebar: 0 0% 11%;
+    --whatsapp-chat-bg: 0 0% 7%;
+    --whatsapp-message-sent: 142 53% 15%;
+    --whatsapp-message-received: 0 0% 11%;
+    --whatsapp-hover: 280 42% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loop infinito da animação de chat */
+@keyframes chatLoop {
+  0%, 100% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0;
+  }
+}
+
+ .animate-chat-loop {
+   animation: chatLoop 16s infinite;
+ }
+
+@layer utilities {
+  /* Hide scrollbars but keep scroll functionality (used for /app_crm_julia pipeline) */
+  .scrollbar-none {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+}

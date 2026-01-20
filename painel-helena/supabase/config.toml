@@ -1,0 +1,130 @@
+project_id = "qoifgfawfkdukjakhssv"
+
+[functions.whatsapp-webhook]
+verify_jwt = false
+
+[functions.uazap-api]
+verify_jwt = false
+
+[functions.ai-agent-handler]
+verify_jwt = false
+
+[functions.test-rabbitmq]
+verify_jwt = false
+
+[functions.generate-embedding]
+verify_jwt = false
+
+[functions.auto-summarize]
+verify_jwt = false
+
+[functions.send-event-notifications]
+verify_jwt = false
+
+[functions.public-booking]
+verify_jwt = false
+
+[functions.public-get-calendar]
+verify_jwt = false
+
+[functions.public-get-events]
+verify_jwt = false
+
+[functions.process-campaign-sender]
+verify_jwt = false
+
+[functions.send-asaas-notification]
+verify_jwt = false
+
+[functions.asaas-webhook]
+verify_jwt = false
+
+[functions.asaas-test-connection]
+verify_jwt = false
+
+[functions.create-subscription-request]
+verify_jwt = false
+
+[functions.send-verification-code]
+verify_jwt = false
+
+[functions.verify-subscription-code]
+verify_jwt = false
+
+[functions.approve-subscription-request]
+verify_jwt = false
+
+[functions.send-access-credentials]
+verify_jwt = false
+
+[functions.reject-subscription-request]
+verify_jwt = false
+
+[functions.public-track-request]
+verify_jwt = false
+
+[functions.reprocess-asaas-payment]
+verify_jwt = false
+
+[functions.create-client]
+verify_jwt = true
+
+[functions.create-asaas-subscription]
+verify_jwt = true
+
+[functions.create-asaas-invoice]
+verify_jwt = true
+
+[functions.create-asaas-customer]
+verify_jwt = true
+
+[functions.monitor-conversations]
+verify_jwt = false
+
+[functions.send-followup]
+verify_jwt = false
+
+[functions.generate-followup-message]
+verify_jwt = false
+
+[functions.pause-agent-followup]
+verify_jwt = true
+
+[functions.cleanup-pre-followup]
+verify_jwt = false
+
+[functions.external-db-query]
+verify_jwt = true
+
+[functions.public-external-db-query]
+verify_jwt = false
+
+[functions.public-julia-performance-summary]
+verify_jwt = false
+
+[functions.helena-chat-redirect]
+verify_jwt = false
+
+[functions.helena-api]
+verify_jwt = true
+
+[functions.public-tickets-query]
+verify_jwt = false
+
+[functions.public-tickets-mutation]
+verify_jwt = false
+
+[functions.public-tickets-sectors]
+verify_jwt = false
+
+[functions.public-tickets-team]
+verify_jwt = false
+
+[functions.helena-contact-info]
+verify_jwt = false
+
+[functions.helena-contact-search]
+verify_jwt = false
+
+[functions.helena-sync]
+verify_jwt = false
