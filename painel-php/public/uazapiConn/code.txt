@@ -1,0 +1,5 @@
+/whatsapp_connect/
+|-- index.php         (A tela principal com o formulário HTML)
+|-- style.css         (O arquivo de estilização)
+|-- script.js         (O código JavaScript para interatividade)
+|-- api_handler.php   (O backend PHP que se comunica com a API Uazapi)
